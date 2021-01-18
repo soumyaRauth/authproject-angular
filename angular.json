@@ -7,7 +7,16 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "spec":false
+        },
+        "@schematics/angular:module": {
+          "style": "scss",
+          "spec":false
+        },
+        "@schematics/angular:service": {
+          "style": "scss",
+          "spec":false
         },
         "@schematics/angular:application": {
           "strict": true
@@ -31,7 +40,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },
@@ -127,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "authtest-project"
+  "defaultProject": "authtest-project",
+  "cli": {
+    "analytics": "f1fa00bd-92ac-4ce2-b9e8-1622c7d4a012"
+  }
 }
