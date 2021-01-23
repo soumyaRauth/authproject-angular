@@ -6,9 +6,10 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import {ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [HomeComponent, LoginComponent,PublicComponent],
+  declarations: [HomeComponent, LoginComponent,PublicComponent, RegisterComponent],
   imports: [
     CommonModule,
     RouterModule,
